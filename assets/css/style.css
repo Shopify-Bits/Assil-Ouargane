@@ -226,7 +226,7 @@ body {
   left: 0;
   right: 0;
   bottom: -1px;
-  height: 120px;
+  height: 100px;
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 120' preserveAspectRatio='none'><path fill='%23fcf5ef' d='M0,64L60,53.3C120,43,240,21,360,24C480,27,600,53,720,80C840,107,960,133,1080,128C1200,123,1320,85,1380,64L1440,43L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z'/></svg>")
     no-repeat bottom center;
   background-size: cover;
@@ -283,6 +283,10 @@ body {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
 }
 
+.hero-media {
+  z-index: 1;
+}
+
 .hero-media img {
   display: block;
   width: 100%;
@@ -303,6 +307,9 @@ body {
   }
   .hero-content {
     max-width: 680px;
+  }
+  .hero-intro::after {
+    height: 50px;
   }
 }
 /* FINAL SECTION */
@@ -816,6 +823,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
